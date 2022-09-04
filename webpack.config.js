@@ -37,7 +37,8 @@ module.exports = {
             '@util': path.resolve(__dirname, './src/util'),
             '@pages': path.resolve(__dirname, './src/pages'),
             '@models': path.resolve(__dirname, './src/models'),
-            '@images': path.resolve(__dirname, './src/images')
+            '@images': path.resolve(__dirname, './src/images'),
+            '@theme': path.resolve(__dirname, './src/theme')
         },
         fallback: {
             fs: false,

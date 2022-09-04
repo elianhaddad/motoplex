@@ -1,9 +1,9 @@
 import {all} from 'redux-saga/effects';
 
-import gitHub from './state/GitHub/sagas';
+import MotoPlexSagas from './state/MotoPlex/sagas';
 
 export default function* rootSagas() {
     yield all([
-        gitHub()
+        MotoPlexSagas()
     ]);
 }

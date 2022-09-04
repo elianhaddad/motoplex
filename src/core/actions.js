@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
-import GitHub from './state/GitHub/actions';
+import MotoPlex from './state/MotoPlex/actions';
 
 export {
-    GitHub
+    MotoPlex
 };

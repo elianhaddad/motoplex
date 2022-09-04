@@ -1,9 +1,20 @@
 import React from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
-import GitHub from './pages/GitHub';
+
+import ThemeProvider from './theme/ThemeProvider';
+import {LightTheme} from './theme/theme';
+
+import Motoplex from './pages';
 
 const App = () => (
-    <GitHub/>
+    <ThemeProvider theme={LightTheme}>
+        <BrowserRouter>
+            <Switch>
+                <Route path="/" key="Motoplex" component={Motoplex}/>
+            </Switch>
+        </BrowserRouter>
+    </ThemeProvider>
 );
 
 export default App;

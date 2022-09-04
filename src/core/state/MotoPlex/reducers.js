@@ -10,7 +10,7 @@ const initialState = {
     extensions: []
 };
 
-const gitHubReducer = (state = {...initialState}, {type, ...props}) => {
+const motoPlexReducer = (state = {...initialState}, {type, ...props}) => {
     switch (type) {
         case FETCH_EXTENSIONS_SUCCEEDED: {
             return {
@@ -27,4 +27,4 @@ const gitHubReducer = (state = {...initialState}, {type, ...props}) => {
     }
 };
 
-export default gitHubReducer;
+export default motoPlexReducer;

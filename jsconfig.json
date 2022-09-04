@@ -14,7 +14,9 @@
       "@constants/*": ["constants/*"],
       "@reducers": ["core/reducers"],
       "@actions": ["core/actions"],
-      "@selectors": ["core/selectors"]
+      "@selectors": ["core/selectors"],
+      "@theme": ["theme"],
+      "@theme/*": ["theme/*"]
     }
   }
 }

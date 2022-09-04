@@ -1,3 +1,3 @@
-import * as GitHub from './state/GitHub/selectors';
+import * as MotoPlex from './state/MotoPlex/selectors';
 
-export default {GitHub};
+export default {MotoPlex};

@@ -1,5 +1,5 @@
 module.exports = {
-    testEnvironment: "node",
+    testEnvironment: 'node',
     verbose: true,
     clearMocks: true,
     collectCoverage: true,
@@ -20,13 +20,14 @@ module.exports = {
         '^@Api(.*)$': '<rootDir>/src/Api$1',
         '^@core(.*)$': '<rootDir>/src/core$1',
         '^@views(.*)$': '<rootDir>/src/views$1',
-        '^@models(.*)$': '<rootDir>/src/models$1'
+        '^@models(.*)$': '<rootDir>/src/models$1',
+        '^@theme(.*)$': '<rootDir>/src/theme$1'
     },
     transform: {
         '^.+\\.js$': 'babel-jest',
         '^.+\\.svg$': '<rootDir>/svgTransform.js'
     },
     transformIgnorePatterns: [
-        "node_modules/(?!variables/.*)"
+        'node_modules/(?!variables/.*)'
     ]
 };

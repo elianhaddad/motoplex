@@ -16,7 +16,7 @@ import split from 'lodash/split';
 import Actions from './actions';
 import Types from './types';
 
-import Api from '../../../Api/gitHub';
+import Api from '../../../Api/motoPlex';
 
 const {
     fetchExtensionsSucceeded,
@@ -88,7 +88,7 @@ function* fetch({push, owner, repo, setMessage, alert}) {
     }
 }
 
-export default function* GitHubSagas() {
+export default function* MotoPlexSagas() {
     yield all([
         takeLatest(FETCH_EXTENSIONS_REQUESTED, fetch)
     ]);
