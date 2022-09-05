@@ -2,8 +2,8 @@
 import get from 'lodash/get';
 
 const vars = {
-    primary: '#8e1f23',
-    secondary: '#6e759f',
+    primary: '#fff',
+    secondary: '#fff',
     success: '#57ca22',
     warning: '#ffA319',
     error: '#ff1943',

@@ -1,4 +1,4 @@
 /* eslint-disable import/prefer-default-export */
 
-export const getIsLoading = state => state.gitHub.isLoading;
-export const getExtensions = state => state.gitHub.extensions;
+export const getIsLoading = state => state.motoPlex.isLoading;
+export const getError = state => state.motoPlex.error;

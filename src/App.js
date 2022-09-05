@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
-
+import './fonts/FSEmeric/stylesheet.css';
 import ThemeProvider from './theme/ThemeProvider';
 import {LightTheme} from './theme/theme';
 

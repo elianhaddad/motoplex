@@ -1,0 +1,48 @@
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import {Link} from 'react-router-dom';
+
+import {styled} from '@mui/styles';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+
+import Logo from '../../images/logo.png';
+
+const TitleNavbar = styled(Typography)(() => ({
+    fontSize: '1.45rem!important',
+    fontWeight: 'bold !important',
+    color: 'white',
+    paddingLeft: 25,
+    letterSpacing: '2px',
+    textDecoration: 'none'
+}));
+
+const HeaderDesktop = () => (
+    <Grid container direction="row" py={4} pl={4}>
+        <Grid item md={3}>
+            <img
+                src={Logo}
+                alt="logo"
+                style={{
+                    width: 'auto', height: '75px'
+                }}
+            />
+        </Grid>
+        <Grid item md={9} pr={20} display="flex" direction="row" alignItems="center" justifyContent="flex-end">
+            <TitleNavbar component={Link} to="#inicio">
+                INICIO
+            </TitleNavbar>
+            <TitleNavbar component={Link} to="#marcas">
+                MARCAS
+            </TitleNavbar>
+            <TitleNavbar component={Link} to="#nosotros">
+                NOSOTROS
+            </TitleNavbar>
+            <TitleNavbar component={Link} to="#contacto">
+                CONTACTO
+            </TitleNavbar>
+        </Grid>
+    </Grid>
+);
+
+export default HeaderDesktop;

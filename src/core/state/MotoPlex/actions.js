@@ -1,17 +1,17 @@
 import Types from './types';
 
-const fetchExtensionsRequested = props => ({
-    type: Types.FETCH_EXTENSIONS_REQUESTED, ...props
-});
-
-const fetchExtensionsSucceeded = props => ({
-    type: Types.FETCH_EXTENSIONS_SUCCEEDED, ...props
+const submitEmail = props => ({
+    type: Types.SUBMIT_EMAIL, ...props
 });
 
 const setIsLoading = props => ({
     type: Types.SET_IS_LOADING, ...props
 });
 
+const setError = props => ({
+    type: Types.SET_ERROR, ...props
+});
+
 export default {
-    fetchExtensionsRequested, fetchExtensionsSucceeded, setIsLoading
+    submitEmail, setIsLoading, setError
 };
