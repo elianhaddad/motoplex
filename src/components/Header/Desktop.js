@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import Logo from '../../images/logo.png';
 
 const TitleNavbar = styled(Typography)(() => ({
-    fontSize: '1.45rem!important',
+    fontSize: '1.30rem!important',
     fontWeight: 'bold !important',
     color: 'white',
     paddingLeft: 25,
@@ -18,13 +18,13 @@ const TitleNavbar = styled(Typography)(() => ({
 }));
 
 const HeaderDesktop = () => (
-    <Grid container direction="row" py={4} pl={4}>
+    <Grid container direction="row" py={4} pl={10}>
         <Grid item md={3}>
             <img
                 src={Logo}
                 alt="logo"
                 style={{
-                    width: 'auto', height: '75px'
+                    width: 'auto', height: '85px'
                 }}
             />
         </Grid>

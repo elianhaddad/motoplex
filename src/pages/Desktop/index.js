@@ -204,7 +204,7 @@ const Desktop = () => (
                                         <LocationCityRounded/>
                                     </Grid>
                                     <Grid item>
-                                        Av.Eva Perón 5616
+                                        Av. Eva Perón 5616
                                     </Grid>
                                 </Grid>
                             </Grid>

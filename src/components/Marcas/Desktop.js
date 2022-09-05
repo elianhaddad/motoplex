@@ -28,21 +28,21 @@ const MarcasDesktop = () => (
                 }}
             />
         </Grid>
-        <Grid item xs={3} sx={{backgroundColor: 'black'}} display="flex" justifyContent="center">
-            <img
-                src={Guzzi}
-                alt="guzzi"
-                style={{
-                    width: '80%', alignSelf: 'center'
-                }}
-            />
-        </Grid>
         <Grid item xs={3} sx={{backgroundColor: '#ff0000'}} display="flex" justifyContent="center">
             <img
                 src={Aprilia}
                 alt="aprilia"
                 style={{
                     width: '70%', alignSelf: 'center'
+                }}
+            />
+        </Grid>
+        <Grid item xs={3} sx={{backgroundColor: 'black'}} display="flex" justifyContent="center">
+            <img
+                src={Guzzi}
+                alt="guzzi"
+                style={{
+                    width: '80%', alignSelf: 'center'
                 }}
             />
         </Grid>
