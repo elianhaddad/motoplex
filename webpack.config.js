@@ -94,7 +94,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: require('./package.json').description,
             template: path.resolve('public', 'template.html'),
-            favicon: 'public/favicon.svg',
+            favicon: 'public/favicon.ico',
             filename: path.resolve(__dirname, 'dist', 'index.html'),
             inject: 'body',
             hash: true,
