@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import {Link} from 'react-router-dom';
@@ -17,7 +18,7 @@ const TitleNavbar = styled(Typography)(() => ({
     textDecoration: 'none'
 }));
 
-const HeaderDesktop = () => (
+const HeaderDesktop = ({handleClickMenu}) => (
     <Grid container direction="row" py={4} pl={10}>
         <Grid item md={3}>
             <img
@@ -29,16 +30,16 @@ const HeaderDesktop = () => (
             />
         </Grid>
         <Grid item md={9} pr={20} display="flex" direction="row" alignItems="center" justifyContent="flex-end">
-            <TitleNavbar component={Link} to="#inicio">
+            <TitleNavbar component={Link} to="#inicio" onClick={() => handleClickMenu('inicio')}>
                 INICIO
             </TitleNavbar>
-            <TitleNavbar component={Link} to="#marcas">
+            <TitleNavbar component={Link} to="#marcas" onClick={() => handleClickMenu('marcas')}>
                 MARCAS
             </TitleNavbar>
-            <TitleNavbar component={Link} to="#nosotros">
+            <TitleNavbar component={Link} to="#nosotros" onClick={() => handleClickMenu('nosotros')}>
                 NOSOTROS
             </TitleNavbar>
-            <TitleNavbar component={Link} to="#contacto">
+            <TitleNavbar component={Link} to="#contacto" onClick={() => handleClickMenu('contacto')}>
                 CONTACTO
             </TitleNavbar>
         </Grid>
