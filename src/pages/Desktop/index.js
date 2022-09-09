@@ -108,7 +108,7 @@ const Desktop = () => {
                     mainSrc={images[photoIndex]}
                     nextSrc={images[(photoIndex + 1) % images.length]}
                     prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                    onCloseRequest={() => setIsOpen(false)}
+                    onCloseRequest={() => { setIsOpen(false); setPhotoIndex(0); setBrand(null); }}
                     onMovePrevRequest={() => setPhotoIndex((photoIndex + images.length - 1) % images.length)}
                     onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % images.length)}
                 />
