@@ -33,6 +33,7 @@ import Vespa from '../../images/marcas/vespa.png';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'react-image-lightbox/style.css';
+import './style.css';
 
 const SubtitleTypography = styled(Typography)(() => ({
     fontSize: '1.2rem!important',
@@ -54,19 +55,19 @@ const Mobile = () => {
 
     const handleClickMenu = section => {
         if (section === 'inicio') {
-            inicioRef.current.scrollIntoView();
+            inicioRef.current.scrollIntoView({behavior: 'smooth'});
         }
 
         if (section === 'marcas') {
-            marcasRef.current.scrollIntoView();
+            marcasRef.current.scrollIntoView({behavior: 'smooth'});
         }
 
         if (section === 'nosotros') {
-            nosotrosRef.current.scrollIntoView();
+            nosotrosRef.current.scrollIntoView({behavior: 'smooth'});
         }
 
         if (section === 'contacto') {
-            contactoRef.current.scrollIntoView();
+            contactoRef.current.scrollIntoView({behavior: 'smooth'});
         }
     };
 
@@ -114,7 +115,13 @@ const Mobile = () => {
                 />
             )}
             <Grid item id="cuadros" display="flex" my={6} px={1} spacing={10} justifyContent="center" alignItems="center">
-                <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
+                <Carousel
+                    className="cuadrosMobile"
+                    autoPlay
+                    infiniteLoop
+                    showThumbs={false}
+                    showStatus={false}
+                >
                     <div>
                         <img
                             src={FirstBlock}

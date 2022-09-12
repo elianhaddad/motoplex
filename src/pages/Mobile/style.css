@@ -1,0 +1,12 @@
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.cuadrosMobile .control-next.control-arrow:before {
+	border-left: 8px solid #000!important;
+}
+
+.cuadrosMobile .control-prev.control-arrow:before {
+	border-right: 8px solid #000!important;
+}

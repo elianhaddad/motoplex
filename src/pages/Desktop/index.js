@@ -54,19 +54,19 @@ const Desktop = () => {
 
     const handleClickMenu = section => {
         if (section === 'inicio') {
-            inicioRef.current.scrollIntoView();
+            inicioRef.current.scrollIntoView({behavior: 'smooth'});
         }
 
         if (section === 'marcas') {
-            marcasRef.current.scrollIntoView();
+            marcasRef.current.scrollIntoView({behavior: 'smooth'});
         }
 
         if (section === 'nosotros') {
-            nosotrosRef.current.scrollIntoView();
+            nosotrosRef.current.scrollIntoView({behavior: 'smooth'});
         }
 
         if (section === 'contacto') {
-            contactoRef.current.scrollIntoView();
+            contactoRef.current.scrollIntoView({behavior: 'smooth'});
         }
     };
 
