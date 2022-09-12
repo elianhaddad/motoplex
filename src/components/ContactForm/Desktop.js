@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {Formik, Form, useFormik} from 'formik';
 
 import {styled} from '@mui/styles';
+import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
@@ -160,16 +161,18 @@ const ContactForm = () => {
                                 />
                             </Grid>
                             <Grid item xs={12}>
-                                <Button
-                                    color="primary"
-                                    variant="contained"
-                                    type="submit"
-                                    sx={{
-                                        width: '250px', my: 3, textAlign: 'center'
-                                    }}
-                                >
-                                    ENVIAR
-                                </Button>
+                                <Box textAlign="center">
+                                    <Button
+                                        color="primary"
+                                        variant="contained"
+                                        type="submit"
+                                        sx={{
+                                            width: '250px', my: 3, textAlign: 'center'
+                                        }}
+                                    >
+                                        ENVIAR
+                                    </Button>
+                                </Box>
                             </Grid>
                         </Grid>
                     </Grid>

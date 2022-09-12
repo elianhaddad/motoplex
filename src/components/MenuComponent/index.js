@@ -6,7 +6,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import {styled} from '@mui/styles';
-import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
+import MenuIcon from '@mui/icons-material/Menu';
 
 import get from 'lodash/get';
 import isEmpty from 'lodash/isEmpty';
@@ -63,7 +63,7 @@ const MenuComponent = ({
                         ? {onClick: e => handleClick(e)} : {onMouseEnter: e => handleClick(e)}
                 )}
             >
-                {!children && (<MoreVertOutlinedIcon fontSize={fontSizeIcon} htmlColor="#374957"/>)}
+                {!children && (<MenuIcon fontSize={fontSizeIcon} htmlColor="#fff"/>)}
                 {children}
             </IconButton>
             {get(anchorEl, 'id') === idElement && (
@@ -95,6 +95,7 @@ const MenuComponent = ({
 
                             onClick={e => {
                                 handleClose();
+                                if (action.onClick) { action.onClick(e); }
                                 actionCallback(action, _id, e);
                             }}
                         >

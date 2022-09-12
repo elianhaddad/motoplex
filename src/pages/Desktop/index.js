@@ -15,7 +15,7 @@ import Lightbox from 'react-image-lightbox';
 
 import getImages from '../../helpers/getImages';
 
-import ContactForm from '../../components/ContactForm';
+import ContactForm from '../../components/ContactForm/Desktop';
 import Header from '../../components/Header/Desktop';
 import Marcas from '../../components/Marcas/Desktop';
 

@@ -9,6 +9,13 @@ import Guzzi1 from '../images/gallery/guzzi/MOTOGUZZI_01.jpg';
 import Guzzi2 from '../images/gallery/guzzi/MOTOGUZZI_02.jpg';
 import Guzzi3 from '../images/gallery/guzzi/MOTOGUZZI_03.jpg';
 import Vespa1 from '../images/gallery/vespa/VESPA_01.jpg';
+import Vespa2 from '../images/gallery/vespa/VESPA_02.png';
+import Vespa3 from '../images/gallery/vespa/VESPA_03.jpg';
+import Vespa4 from '../images/gallery/vespa/VESPA_04.jpg';
+import Vespa5 from '../images/gallery/vespa/VESPA_05.jpg';
+import Vespa6 from '../images/gallery/vespa/VESPA_06.jpg';
+import Piaggio1 from '../images/gallery/piaggio/PIAGGIO_01.jpg';
+import Piaggio2 from '../images/gallery/piaggio/PIAGGIO_02.jpg';
 
 const getImages = brand => {
     if (brand === 'aprilia') {
@@ -24,12 +31,12 @@ const getImages = brand => {
     }
 
     if (brand === 'piaggio') {
-        return [];
+        return [Piaggio1, Piaggio2];
     }
 
     if (brand === 'vespa') {
         return [
-            Vespa1
+            Vespa1, Vespa2, Vespa3, Vespa4, Vespa5, Vespa6
         ];
     }
 
