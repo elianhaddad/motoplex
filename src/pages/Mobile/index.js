@@ -57,25 +57,25 @@ const Mobile = () => {
     const handleClickMenu = section => {
         if (section === 'inicio') {
             scrollIntoView(inicioRef.current, {
-                behavior: 'smooth', block: 'center', inline: 'center'
+                behavior: 'smooth', block: 'start', inline: 'center'
             });
         }
 
         if (section === 'marcas') {
             scrollIntoView(marcasRef.current, {
-                behavior: 'smooth', block: 'center', inline: 'center'
+                behavior: 'smooth', block: 'start', inline: 'center'
             });
         }
 
         if (section === 'nosotros') {
             scrollIntoView(nosotrosRef.current, {
-                behavior: 'smooth', block: 'center', inline: 'center'
+                behavior: 'smooth', block: 'start', inline: 'center'
             });
         }
 
         if (section === 'contacto') {
             scrollIntoView(contactoRef.current, {
-                behavior: 'smooth', block: 'center', inline: 'center'
+                behavior: 'smooth', block: 'start', inline: 'center'
             });
         }
     };
