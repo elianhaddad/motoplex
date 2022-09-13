@@ -257,7 +257,7 @@ const Mobile = () => {
                             </Typography>
                             <Typography fontFamily="Arial" color="white" fontSize={13}>
                                 <Grid container direction="column" mt={1} mb={2}>
-                                    <Grid container direction="row" justifyContent="center" alignItems="center">
+                                    <Grid container direction="row" justifyContent="flex-start" alignItems="center">
                                         <Grid item mr={1}>
                                             <FacebookOutlined/>
                                         </Grid>
@@ -265,7 +265,7 @@ const Mobile = () => {
                                             motoplex.rosario
                                         </Grid>
                                     </Grid>
-                                    <Grid container direction="row" justifyContent="center" alignItems="center">
+                                    <Grid container direction="row" justifyContent="flex-start" alignItems="center">
                                         <Grid item mr={1}>
                                             <Instagram/>
                                         </Grid>
@@ -273,7 +273,7 @@ const Mobile = () => {
                                             motoplex.rosario
                                         </Grid>
                                     </Grid>
-                                    <Grid container direction="row" justifyContent="center" alignItems="center">
+                                    <Grid container direction="row" justifyContent="flex-start" alignItems="center">
                                         <Grid item mr={1}>
                                             <WhatsApp/>
                                         </Grid>
@@ -281,7 +281,7 @@ const Mobile = () => {
                                             3412129143
                                         </Grid>
                                     </Grid>
-                                    <Grid container direction="row" justifyContent="center" alignItems="center">
+                                    <Grid container direction="row" justifyContent="flex-start" alignItems="center">
                                         <Grid item mr={1}>
                                             <LocationCityRounded/>
                                         </Grid>
