@@ -1,4 +1,5 @@
 import React, {useRef, useState} from 'react';
+import {scrollIntoView} from 'seamless-scroll-polyfill';
 import {styled} from '@mui/styles';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
@@ -55,19 +56,27 @@ const Mobile = () => {
 
     const handleClickMenu = section => {
         if (section === 'inicio') {
-            inicioRef.current.scrollIntoView({behavior: 'smooth'});
+            scrollIntoView(inicioRef.current, {
+                behavior: 'smooth', block: 'center', inline: 'center'
+            });
         }
 
         if (section === 'marcas') {
-            marcasRef.current.scrollIntoView({behavior: 'smooth'});
+            scrollIntoView(marcasRef.current, {
+                behavior: 'smooth', block: 'center', inline: 'center'
+            });
         }
 
         if (section === 'nosotros') {
-            nosotrosRef.current.scrollIntoView({behavior: 'smooth'});
+            scrollIntoView(nosotrosRef.current, {
+                behavior: 'smooth', block: 'center', inline: 'center'
+            });
         }
 
         if (section === 'contacto') {
-            contactoRef.current.scrollIntoView({behavior: 'smooth'});
+            scrollIntoView(contactoRef.current, {
+                behavior: 'smooth', block: 'center', inline: 'center'
+            });
         }
     };
 
