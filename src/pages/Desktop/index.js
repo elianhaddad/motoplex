@@ -23,6 +23,7 @@ import Banner1 from '../../images/banner-1.png';
 import Banner2 from '../../images/banner-2.png';
 import FirstBlock from '../../images/cuadros/cuadro-1.png';
 import Logo from '../../images/logo.png';
+import Nosotros from '../../images/nosotros.png';
 import SecondBlock from '../../images/cuadros/cuadro-2.png';
 
 import Aprilia from '../../images/marcas/aprilia.png';
@@ -129,44 +130,21 @@ const Desktop = () => {
                     }}
                 />
             </Grid>
-            <Grid item id="nosotros" ref={nosotrosRef}>
-                <Grid
-                    container
-                    mt={3}
-                    py={6}
-                    px={5}
-                    direction="row"
-                    spacing={2}
-                    justifyContent="center"
-                    alignItems="center"
-                    sx={{backgroundColor: '#1a1a1a'}}
-                >
-                    <Grid item xs={4} display="flex" justifyContent="center" alignItems="center">
-                        <img
-                            src={Logo}
-                            alt="imgNosotros"
-                            style={{
-                                width: '50%', height: 'auto', alignSelf: 'center'
-                            }}
-                        />
-                    </Grid>
-                    <Grid item xs={8} pr="10%" fontSize="1.35rem !important">
-                        <span style={{
-                            fontFamily: 'Arial',
-                            color: 'white',
-                            letterSpacing: '1px'
-                        }}
-                        >
-                            <b>MOTOPLEX: </b>
-                            ES EL LUGAR DONDE TODO ESTO COEXISTE
-                            EN UNA EXPERIENCIA QUE NUNCA TERMINA. DESCUBRIR
-                            EL CONCEPTO INTERNACIONAL DE TIENDAS DE GRUPO
-                            PIAGGIO EN ARGENTINA. VESPA, PIAGGIO, APRILIA Y
-                            MOTO GUZZI. EXPLORA TUS MARCAS FAVORITAS Y DALE
-                            A TU PASIÓN LA FORMA QUE PREFIERES.
-                        </span>
-                    </Grid>
-                </Grid>
+            <Grid
+                item
+                sx={{
+                    width: '100%', backgroundColor: '#1a1a1a', textAlign: 'center'
+                }}
+                id="nosotros"
+                ref={nosotrosRef}
+            >
+                <img
+                    src={Nosotros}
+                    alt="nosotros"
+                    style={{
+                        height: 'auto', width: '60%', alignSelf: 'center'
+                    }}
+                />
             </Grid>
             <Grid item id="contacto" ref={contactoRef}>
                 <ContactForm/>

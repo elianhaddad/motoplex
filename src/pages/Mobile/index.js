@@ -23,7 +23,7 @@ import Marcas from '../../components/Marcas/Mobile';
 import Banner1 from '../../images/banner-mobile-1.png';
 import Banner2 from '../../images/banner-mobile-2.png';
 import FirstBlock from '../../images/cuadros/cuadro-1.png';
-import Logo from '../../images/logo.png';
+import Nosotros from '../../images/nosotros-mobile.png';
 import SecondBlock from '../../images/cuadros/cuadro-2.png';
 
 import Aprilia from '../../images/marcas/aprilia.png';
@@ -153,43 +153,19 @@ const Mobile = () => {
             </Grid>
             <Grid
                 item
+                sx={{
+                    width: '100%', backgroundColor: '#1a1a1a', textAlign: 'center'
+                }}
                 id="nosotros"
                 ref={nosotrosRef}
             >
-                <Grid
-                    container
-                    mt={3}
-                    py={6}
-                    px={1}
-                    direction="column"
-                    justifyContent="center"
-                    alignItems="center"
-                    sx={{backgroundColor: '#1a1a1a'}}
-                    fontSize="1.15rem !important"
-                >
-                    <img
-                        src={Logo}
-                        alt="imgNosotros"
-                        style={{
-                            width: '50%', height: 'auto', alignSelf: 'center', marginBottom: '1rem'
-                        }}
-                    />
-                    <span style={{
-                        fontFamily: 'Arial',
-                        color: 'white',
-                        textAlign: 'center',
-                        letterSpacing: '1px'
+                <img
+                    src={Nosotros}
+                    alt="nosotros"
+                    style={{
+                        height: 'auto', width: '100%', alignSelf: 'center'
                     }}
-                    >
-                        <b>MOTOPLEX: </b>
-                        ES EL LUGAR DONDE TODO ESTO COEXISTE
-                        EN UNA EXPERIENCIA QUE NUNCA TERMINA. DESCUBRIR
-                        EL CONCEPTO INTERNACIONAL DE TIENDAS DE GRUPO
-                        PIAGGIO EN ARGENTINA. VESPA, PIAGGIO, APRILIA Y
-                        MOTO GUZZI. EXPLORA TUS MARCAS FAVORITAS Y DALE
-                        A TU PASIÓN LA FORMA QUE PREFIERES.
-                    </span>
-                </Grid>
+                />
             </Grid>
             <Grid item id="contacto" ref={contactoRef}>
                 <ContactForm/>
