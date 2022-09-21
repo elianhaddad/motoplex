@@ -19,18 +19,18 @@ import ContactForm from '../../components/ContactForm/Desktop';
 import Header from '../../components/Header/Desktop';
 import Marcas from '../../components/Marcas/Desktop';
 
-import Banner1 from '../../images/banner-1.png';
-import Banner2 from '../../images/banner-2.png';
-import FirstBlock from '../../images/cuadros/cuadro-1.png';
-import Logo from '../../images/logo.png';
-import Nosotros from '../../images/nosotros.png';
-import SecondBlock from '../../images/cuadros/cuadro-2.png';
+import Banner1 from '../../images/banner-1.webp';
+import Banner2 from '../../images/banner-2.webp';
+import FirstBlock from '../../images/cuadros/cuadro-1.webp';
+import Logo from '../../images/logo.webp';
+import Nosotros from '../../images/nosotros.webp';
+import SecondBlock from '../../images/cuadros/cuadro-2.webp';
 
-import Aprilia from '../../images/marcas/aprilia.png';
-import Guzzi from '../../images/marcas/guzzi.png';
-import Paiggio from '../../images/marcas/paiggio.png';
-import PaiggioGroup from '../../images/marcas/paiggioGroup.png';
-import Vespa from '../../images/marcas/vespa.png';
+import Aprilia from '../../images/marcas/aprilia.webp';
+import Guzzi from '../../images/marcas/guzzi.webp';
+import Paiggio from '../../images/marcas/paiggio.webp';
+import PaiggioGroup from '../../images/marcas/paiggioGroup.webp';
+import Vespa from '../../images/marcas/vespa.webp';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'react-image-lightbox/style.css';

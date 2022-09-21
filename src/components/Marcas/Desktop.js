@@ -6,10 +6,10 @@ import React from 'react';
 
 import Grid from '@mui/material/Grid';
 
-import Aprilia from '../../images/marcas/aprilia.png';
-import Guzzi from '../../images/marcas/guzzi.png';
-import Piaggio from '../../images/marcas/paiggio.png';
-import Vespa from '../../images/marcas/vespa.png';
+import Aprilia from '../../images/marcas/aprilia.webp';
+import Guzzi from '../../images/marcas/guzzi.webp';
+import Piaggio from '../../images/marcas/paiggio.webp';
+import Vespa from '../../images/marcas/vespa.webp';
 
 const MarcasDesktop = ({setIsOpen, setBrand}) => (
     <Grid container height="400px">

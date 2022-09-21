@@ -7,7 +7,7 @@ import {styled} from '@mui/styles';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
-import Logo from '../../images/logo.png';
+import Logo from '../../images/logo.webp';
 
 const TitleNavbar = styled(Typography)(() => ({
     fontSize: '1.30rem!important',
