@@ -1,6 +1,7 @@
 {
   "name": "motoplex",
   "version": "0.1.0",
+  "homepage": "https://motoplexstore.com.ar/",
   "private": true,
   "dependencies": {
     "@babel/eslint-parser": "^7.17.0",
