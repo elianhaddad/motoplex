@@ -45,27 +45,24 @@ const ContactForm = () => {
     const isLoading = useSelector(getIsLoading);
     const error = useSelector(getError);
 
-    const [values, setValues] = useState();
-
-    const formik = useFormik({
-        initialValues: {},
-        validationSchema,
-        onSubmit: values => {
-            dispatch(submitEmail(values));
-        }
-    });
-
-    const handleSubmit = (newValues, helpers) => {
-        setValues(values);
-    };
-
     return (
         <Formik
-            initialValues={values}
+            enableReinitialize
             validationSchema={validationSchema}
-            onSubmit={(values, helpers) => handleSubmit(values, helpers)}
+            initialValues={{
+                name: '',
+                surname: '',
+                phone: '',
+                email: '',
+                city: '',
+                model: '',
+                message: ''
+            }}
+            onSubmit={values => {
+                dispatch(submitEmail(values));
+            }}
         >
-            <Form>
+            {({handleSubmit, handleChange, values, touched, errors}) => (
                 <Grid container direction="column" spacing={2}>
                     <Grid item xs={12} textAlign="center" mt={3}>
                         <TitleContact>
@@ -80,10 +77,10 @@ const ContactForm = () => {
                                     id="name"
                                     name="name"
                                     label="Nombre"
-                                    value={formik.values.name}
-                                    onChange={formik.handleChange}
-                                    error={formik.touched.name && Boolean(formik.errors.name)}
-                                    helperText={formik.touched.name && formik.errors.name}
+                                    value={values.name}
+                                    onChange={handleChange}
+                                    error={touched.name && Boolean(errors.name)}
+                                    helperText={touched.name && errors.name}
                                 />
                             </Grid>
                             <Grid item xs={6}>
@@ -92,10 +89,10 @@ const ContactForm = () => {
                                     id="surname"
                                     name="surname"
                                     label="Apellido"
-                                    value={formik.values.surname}
-                                    onChange={formik.handleChange}
-                                    error={formik.touched.surname && Boolean(formik.errors.surname)}
-                                    helperText={formik.touched.surname && formik.errors.surname}
+                                    value={values.surname}
+                                    onChange={handleChange}
+                                    error={touched.surname && Boolean(errors.surname)}
+                                    helperText={touched.surname && errors.surname}
                                 />
                             </Grid>
                             <Grid item xs={6}>
@@ -104,10 +101,10 @@ const ContactForm = () => {
                                     id="phone"
                                     name="phone"
                                     label="Número de teléfono"
-                                    value={formik.values.phone}
-                                    onChange={formik.handleChange}
-                                    error={formik.touched.phone && Boolean(formik.errors.phone)}
-                                    helperText={formik.touched.phone && formik.errors.phone}
+                                    value={values.phone}
+                                    onChange={handleChange}
+                                    error={touched.phone && Boolean(errors.phone)}
+                                    helperText={touched.phone && errors.phone}
                                 />
                             </Grid>
                             <Grid item xs={6}>
@@ -116,10 +113,10 @@ const ContactForm = () => {
                                     id="email"
                                     name="email"
                                     label="Email"
-                                    value={formik.values.email}
-                                    onChange={formik.handleChange}
-                                    error={formik.touched.email && Boolean(formik.errors.email)}
-                                    helperText={formik.touched.email && formik.errors.email}
+                                    value={values.email}
+                                    onChange={handleChange}
+                                    error={touched.email && Boolean(errors.email)}
+                                    helperText={touched.email && errors.email}
                                 />
                             </Grid>
                             <Grid item xs={6}>
@@ -128,10 +125,10 @@ const ContactForm = () => {
                                     id="city"
                                     name="city"
                                     label="Ciudad"
-                                    value={formik.values.city}
-                                    onChange={formik.handleChange}
-                                    error={formik.touched.city && Boolean(formik.errors.city)}
-                                    helperText={formik.touched.city && formik.errors.city}
+                                    value={values.city}
+                                    onChange={handleChange}
+                                    error={touched.city && Boolean(errors.city)}
+                                    helperText={touched.city && errors.city}
                                 />
                             </Grid>
                             <Grid item xs={6}>
@@ -140,10 +137,10 @@ const ContactForm = () => {
                                     id="model"
                                     name="model"
                                     label="Modelo"
-                                    value={formik.values.model}
-                                    onChange={formik.handleChange}
-                                    error={formik.touched.model && Boolean(formik.errors.model)}
-                                    helperText={formik.touched.model && formik.errors.model}
+                                    value={values.model}
+                                    onChange={handleChange}
+                                    error={touched.model && Boolean(errors.model)}
+                                    helperText={touched.model && errors.model}
                                 />
                             </Grid>
                             <Grid item xs={12}>
@@ -154,10 +151,10 @@ const ContactForm = () => {
                                     label="Mensaje"
                                     multiline
                                     rows={7}
-                                    value={formik.values.message}
-                                    onChange={formik.handleChange}
-                                    error={formik.touched.message && Boolean(formik.errors.message)}
-                                    helperText={formik.touched.cimessagety && formik.errors.message}
+                                    value={values.message}
+                                    onChange={handleChange}
+                                    error={touched.message && Boolean(errors.message)}
+                                    helperText={touched.cimessagety && errors.message}
                                 />
                             </Grid>
                             <Grid item xs={12}>
@@ -166,6 +163,7 @@ const ContactForm = () => {
                                         color="primary"
                                         variant="contained"
                                         type="submit"
+                                        onClick={handleSubmit}
                                         sx={{
                                             width: '250px', my: 3, textAlign: 'center'
                                         }}
@@ -177,8 +175,7 @@ const ContactForm = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-
-            </Form>
+            )}
         </Formik>
     );
 };

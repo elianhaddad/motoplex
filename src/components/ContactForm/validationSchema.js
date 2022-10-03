@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 
-const validationsForm = {
+const validationsForm = yup.object({
     name: yup.string().required('Requerido'),
     surname: yup.string().required('Requerido'),
     phone: yup.string().required('Número de teléfono'),
@@ -13,6 +13,6 @@ const validationsForm = {
     message: yup
         .string()
         .required('Requerido')
-};
+});
 
 export default validationsForm;
