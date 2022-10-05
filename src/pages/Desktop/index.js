@@ -133,7 +133,7 @@ const Desktop = () => {
             <Grid
                 item
                 sx={{
-                    width: '100%', backgroundColor: '#1a1a1a', textAlign: 'center'
+                    width: '100%', backgroundColor: '#222222', textAlign: 'center'
                 }}
                 id="nosotros"
                 ref={nosotrosRef}

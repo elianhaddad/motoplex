@@ -23,7 +23,7 @@ import Marcas from '../../components/Marcas/Mobile';
 import Banner1 from '../../images/banner-mobile-1.webp';
 import Banner2 from '../../images/banner-mobile-2.webp';
 import FirstBlock from '../../images/cuadros/cuadro-1.webp';
-import Nosotros from '../../images/nosotros-mobile.webp';
+import Nosotros from '../../images/nosotros.webp';
 import SecondBlock from '../../images/cuadros/cuadro-2.webp';
 
 import Aprilia from '../../images/marcas/aprilia.webp';
@@ -154,7 +154,7 @@ const Mobile = () => {
             <Grid
                 item
                 sx={{
-                    width: '100%', backgroundColor: '#1a1a1a', textAlign: 'center'
+                    width: '100%', backgroundColor: '#222222', textAlign: 'center'
                 }}
                 id="nosotros"
                 ref={nosotrosRef}
